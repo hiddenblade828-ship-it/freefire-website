@@ -1,63 +1,162 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Free Fire Gaming</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free Fire Pro Gaming</title>
+
 <style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
 body{
-  margin:0;
-  background:black;
-  color:white;
-  font-family:Arial;
-  text-align:center;
+background:#000;
+color:white;
 }
+
 header{
-  background:orange;
-  padding:20px;
+background:linear-gradient(90deg,#ff7b00,#ffb700);
+padding:20px;
+text-align:center;
+font-size:28px;
+font-weight:bold;
 }
+
 .hero{
-  padding:50px 20px;
+height:70vh;
+background:url('https://images.unsplash.com/photo-1542751371-adc38448a05e') center/cover;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
 }
+
+.hero-box{
+background:rgba(0,0,0,0.7);
+padding:30px;
+border-radius:15px;
+}
+
+.hero h1{
+font-size:40px;
+margin-bottom:10px;
+}
+
 .btn{
-  background:red;
-  color:white;
-  padding:12px 25px;
-  text-decoration:none;
-  border-radius:5px;
+display:inline-block;
+margin-top:15px;
+padding:12px 25px;
+background:red;
+color:white;
+text-decoration:none;
+border-radius:8px;
 }
+
+.section{
+padding:40px 20px;
+text-align:center;
+}
+
+.cards{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+}
+
 .card{
-  background:#222;
-  margin:15px;
-  padding:20px;
-  border-radius:10px;
+background:#1f1f1f;
+padding:20px;
+width:300px;
+border-radius:12px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:scale(1.05);
+}
+
+footer{
+background:#111;
+padding:20px;
+text-align:center;
+margin-top:30px;
 }
 </style>
 </head>
+
 <body>
 
 <header>
-  <h1>FREE FIRE GAMING</h1>
+🔥 FREE FIRE PRO GAMING 🔥
 </header>
 
-<div class="hero">
-  <h2>Welcome Survivors</h2>
-  <p>Latest News, Events & Tips</p>
-  <a href="#" class="btn">Play Now</a>
+<section class="hero">
+<div class="hero-box">
+<h1>Welcome Survivors</h1>
+<p>Latest Events, Characters, Weapons & Tournaments</p>
+<a href="#characters" class="btn">Explore</a>
+</div>
+</section>
+
+<section id="characters" class="section">
+<h2>Popular Characters</h2>
+<br>
+<div class="cards">
+<div class="card">
+<h3>Alok</h3>
+<p>Increase movement speed and healing.</p>
 </div>
 
 <div class="card">
-  <h3>Characters</h3>
-  <p>Explore powerful Free Fire characters.</p>
+<h3>Chrono</h3>
+<p>Create a protective force field.</p>
 </div>
 
 <div class="card">
-  <h3>Weapons</h3>
-  <p>Check the best weapons for ranked matches.</p>
+<h3>Skyler</h3>
+<p>Destroy enemy gloo walls instantly.</p>
+</div>
+</div>
+</section>
+
+<section class="section">
+<h2>Top Weapons</h2>
+<br>
+<div class="cards">
+<div class="card">
+<h3>MP40</h3>
+<p>Best close-range weapon.</p>
 </div>
 
 <div class="card">
-  <h3>Tournaments</h3>
-  <p>Stay updated with upcoming events.</p>
+<h3>AWM</h3>
+<p>Powerful sniper rifle.</p>
 </div>
+
+<div class="card">
+<h3>M1887</h3>
+<p>Deadly shotgun damage.</p>
+</div>
+</div>
+</section>
+
+<section class="section">
+<h2>Upcoming Tournaments</h2>
+<br>
+<div class="card" style="margin:auto;">
+<h3>Free Fire Championship</h3>
+<p>Join and compete with top players.</p>
+</div>
+</section>
+
+<footer>
+© 2026 Free Fire Pro Gaming Website
+</footer>
 
 </body>
 </html>
